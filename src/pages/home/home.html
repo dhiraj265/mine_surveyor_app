@@ -1,14 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Mine Surveyor
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding id="canvas">
+  <h2 class="font-color">Controls:</h2>
+  <button id="front-button" ion-button color="light" (click)="goFront()" round large><ion-icon name="arrow-up"></ion-icon></button>
+  <button id="left-button"ion-button color="light" (click)="turnLeft()" round large><ion-icon name="arrow-back"></ion-icon></button>
+  <button id="stop-button" ion-button color="light" (click)="stopMove()" round large><ion-icon name="hand"></ion-icon></button>
+  <button id="right-button" ion-button color="light" (click)="turnRight()" round large><ion-icon name="arrow-forward"></ion-icon></button>
+  <button id="back-button" ion-button color="light" (click)="goBack()" round large><ion-icon name="arrow-down"></ion-icon></button>
+  <h2 class="font-color">Values:</h2>
+  <h5 class="font-color">O2 = {{ o2Val }}</h5>
+  <h5 class="font-color">CO2 = {{ co2Val }}</h5>
+  <h5 class="font-color">NH3 = {{ nh3Val }}</h5>
+  <h2 class="font-color">Danger:</h2>
+  <h5 class="font-color">{{ danger }}</h5>
+  <h6 class="author font-color">developed by dhiraj265</h6>
 </ion-content>

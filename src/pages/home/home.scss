@@ -1,3 +1,33 @@
 page-home {
-
+  .font-color{
+    color: #f4f4f4;
+  }
+  #canvas{
+    background-color: #222222;
+  }
+  #left-button{
+    postion: fixed;
+    top: 40px;
+    left: -30px;
+  }
+  #right-button{
+    postion: fixed;
+    top: 40px;
+    right: 0px;
+  }
+  #front-button{
+    postion: fixed;
+    top: -30px;
+    left:138px;
+  }
+  #back-button{
+    postion: fixed;
+    top: 47px;
+    left:138px;
+  }
+  #stop-button{
+    postion: fixed;
+    top: 40px;
+    left:-15px;
+  }
 }
